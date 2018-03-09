@@ -1,0 +1,5 @@
+---
+- name: git configuration
+  git_config:
+    name: core.editor
+    value: vim
