@@ -1,7 +1,19 @@
 ---
 - hosts: localhost
+
+  vars:
+    nodejs_version: "6.x"
+    pip_install_packages:
+      - name: docker-py
+
   roles:
     - { role: update, become: yes }
     - { role: dev-sec.os-hardening, become: yes }
+    - { role: geerlingguy.ansible, become: yes }
+    - { role: geerlingguy.docker, become: yes }
+    - { role: geerlingguy.git, become: yes }
+    - { role: geerlingguy.nodejs, become: yes }
+    - { role: geerlingguy.pip, become: yes }
     - { role: geerlingguy.security, become: yes }
     - { role: git, become: yes }
+    - { role: geerlingguy.awx, become: yes }
