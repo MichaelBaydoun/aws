@@ -3,4 +3,5 @@
   roles:
     - { role: update, become: yes }
     - { role: dev-sec.os-hardening, become: yes }
+    - { role: geerlingguy.security, become: yes }
     - { role: git, become: yes }

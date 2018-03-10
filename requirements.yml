@@ -1,3 +1,4 @@
 ---
 - src: cmprescott.chrome
 - src: dev-sec.os-hardening
+- src: geerlingguy.security
