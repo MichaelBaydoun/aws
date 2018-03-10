@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  roles:
+    - { role: update, become: yes }
+    - { role: dev-sec.os-hardening, become: yes }
+    - { role: git, become: yes }
